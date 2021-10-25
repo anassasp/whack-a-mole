@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import mole from '../mole.png';
 
 let timeInterval;
 
@@ -52,7 +53,7 @@ const Menu = (props) => {
         </p>
         
         <img 
-            src={process.env.PUBLIC_URL + 'mole.png'}
+            src={mole}
             alt="mole"
             className="mole-start" 
             onDragStart={(e) => {e.preventDefault()}}

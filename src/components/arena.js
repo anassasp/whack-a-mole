@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
-// import mole from '.../public/mole.png';
+import mole from '../mole.png';
+
 
 const showTarget = {
     transform: 'scale(1, 1)',
@@ -63,7 +64,7 @@ const Arena = (props) => {
                 {props.holes.map(hole => (
                     <div key={hole} className="hole">
                         <img 
-                            src={process.env.PUBLIC_URL + 'mole.png'}
+                            src={mole}
                             alt="mole"
                             className="target" 
                             onClick={targetClicked} 
